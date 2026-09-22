@@ -24,6 +24,27 @@ header {
   border-radius: 5px;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.auth-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.auth-controls button {
+  background-color: white;
+  color: #1a237e;
+  font-size: 14px;
+}
+
 header h1 {
   margin-bottom: 10px;
 }
@@ -190,6 +211,17 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+#login-prompt {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
 }
 
 footer {
